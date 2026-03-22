@@ -5,10 +5,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  /* ── Shadcn tokens (giữ nguyên) ── */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-mono);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -46,9 +47,33 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* ── ICT custom tokens ── */
+  --font-ict-sans: var(--font-sans);
+  --font-ict-mono: var(--font-mono);
+
+  --color-ict-bg: var(--ict-bg);
+  --color-ict-bg-2: var(--ict-bg-2);
+  --color-ict-bg-3: var(--ict-bg-3);
+  --color-ict-border: var(--ict-border);
+  --color-ict-border-2: var(--ict-border-2);
+  --color-ict-text: var(--ict-text);
+  --color-ict-text-2: var(--ict-text-2);
+  --color-ict-text-bright: var(--ict-text-bright);
+  --color-ict-amber: var(--ict-amber);
+  --color-ict-amber-dim: var(--ict-amber-dim);
+  --color-ict-blue: var(--ict-blue);
+  --color-ict-blue-dim: var(--ict-blue-dim);
+  --color-ict-green: var(--ict-green);
+  --color-ict-green-dim: var(--ict-green-dim);
+  --color-ict-red: var(--ict-red);
+  --color-ict-red-dim: var(--ict-red-dim);
+  --color-ict-violet: var(--ict-violet);
+  --color-ict-violet-dim: var(--ict-violet-dim);
 }
 
 :root {
+  /* ── Shadcn light (giữ nguyên) ── */
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -81,9 +106,30 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* ── ICT tokens (dùng chung cả light/dark vì lesson page luôn dark) ── */
+  --ict-bg: #080c14;
+  --ict-bg-2: #0f1520;
+  --ict-bg-3: #151d2e;
+  --ict-border: #1c2840;
+  --ict-border-2: #263550;
+  --ict-text: #c8d6e5;
+  --ict-text-2: #5a6d85;
+  --ict-text-bright: #eaf0f6;
+  --ict-amber: #f59e0b;
+  --ict-amber-dim: rgba(245, 158, 11, 0.1);
+  --ict-blue: #60a5fa;
+  --ict-blue-dim: rgba(96, 165, 250, 0.1);
+  --ict-green: #34d399;
+  --ict-green-dim: rgba(52, 211, 153, 0.1);
+  --ict-red: #f87171;
+  --ict-red-dim: rgba(248, 113, 113, 0.1);
+  --ict-violet: #a78bfa;
+  --ict-violet-dim: rgba(167, 139, 250, 0.1);
 }
 
 .dark {
+  /* ── Shadcn dark (giữ nguyên) ── */
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -107,14 +153,14 @@
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar: #0a0e17;
+  --sidebar-foreground: #c8d6e5;
+  --sidebar-border: #1c2840;
+  --sidebar-accent: #0f1520;
+  --sidebar-accent-foreground: #c8d6e5;
+  --sidebar-primary: #f59e0b;
+  --sidebar-primary-foreground: #080c14;
+  --sidebar-ring: #f59e0b;
 }
 
 @layer base {
